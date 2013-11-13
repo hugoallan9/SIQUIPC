@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Quiniela>
+<EstructuraFija>
+<Nombre> NombreCampeonato </Nombre>
+<Estado> CREADO | FINALIZADO | CERRADO </Estado>
+<GrupoA>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoA>
+<GrupoB>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoB>
+<GrupoC>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoC>
+<GrupoD>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoD>
+<GrupoE>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoE>
+<GrupoF>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3> 
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoF>
+<GrupoG>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoG>
+<GrupoH>
+<Equipo1> NombreEquipo </Equipo1>
+<Equipo2> NombreEquipo </Equipo2>
+<Equipo3> NombreEquipo </Equipo3>
+<Equipo4> NombreEquipo </Equipo4>
+</GrupoH>
+<OrganizaGrupo>
+<Juego1>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego1>
+<Juego2>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego2>
+<Juego3>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego3>
+<Juego4>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego4>
+<Juego5>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego5>
+<Juego6>
+<Rival1> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival1>
+<Rival2> Equipo1 | Equipo2 | Equipo3 | Equipo4 </Rival2> 
+</Juego6>
+</OrganizaGrupo>
+<Organiza8vos>
+<Octavo1>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo1>
+<Octavo2>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo2>
+<Octavo3>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo3>
+<Octavo4>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo4>
+<Octavo5>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo5>
+<Octavo6>
+<Rival1>  
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo6>
+<Octavo7>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo7>
+<Octavo8>
+<Rival1> 
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A | B | C | D | F | G | H </Grupo>
+<Posicion> 1 | 2 </Posicion>
+</Rival2>
+</Octavo8>
+</Organiza8vos>
+<Organiza4tos>
+<Cuarto1>
+<Rival1> Octavo1 | Octavo2 … | Octavo8 </Rival1>
+<Rival2> Octavo1 | Octavo2 … | Octavo8 </Rival2>
+</Cuarto1>
+<Cuarto2>
+<Rival1> Octavo1 | Octavo2 … | Octavo8 </Rival1>
+<Rival2> Octavo1 | Octavo2 … | Octavo8 </Rival2>
+</Cuarto2>
+<Cuarto3>
+<Rival1> Octavo1 | Octavo2 … | Octavo8 </Rival1>
+<Rival2> Octavo1 | Octavo2 … | Octavo8 </Rival2>
+</Cuarto3>
+<Cuarto4>
+<Rival1> Octavo1 | Octavo2 … | Octavo8 </Rival1>
+<Rival2> Octavo1 | Octavo2 … | Octavo8 </Rival2>
+</Cuarto4>
+</Organiza4tos>
+<OrganizaSemiFinal>
+<Semi1>
+<Rival1> Cuarto1 | Cuarto2 | Cuarto3 | Cuarto4 </Rival1>
+<Rival2> Cuarto1 | Cuarto2 | Cuarto3 | Cuarto4 </Rival2>
+</Semi1>
+<Semi2>
+<Rival1> Cuarto1 | Cuarto2 | Cuarto3 | Cuarto4 </Rival1>
+<Rival2> Cuarto1 | Cuarto2 | Cuarto3 | Cuarto4 </Rival2>
+</Semi2>
+</OrganizaSemifinal>
+<OrganizaFinal>
+
+<Final>
+<Rival1> Semi1 | Semi2 </Rival1>
+<Rival2> Semi1 | Semi2 </Rival2>
+</Final>
+</OrganizaFinal>
+</EstructuraFija>
+</Quiniela>

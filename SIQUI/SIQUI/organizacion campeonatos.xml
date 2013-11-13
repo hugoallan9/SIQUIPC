@@ -1,0 +1,369 @@
+﻿<Quiniela>
+<EstructuraFija>
+<Nombre> Sudafrica 2010 </Nombre>
+<Estado> CREADO </Estado>
+<GrupoA>
+<Equipo1> Uruguay </Equipo1>
+<Equipo2> Mexico </Equipo2>
+<Equipo3> Sudafrica</Equipo3>
+<Equipo4> Francia </Equipo4>
+</GrupoA>
+<GrupoB>
+<Equipo1> Argentina </Equipo1>
+<Equipo2> Corea del Sur </Equipo2>
+<Equipo3> Grecia </Equipo3>
+<Equipo4> Nigeria </Equipo4>
+</GrupoB>
+<GrupoC>
+<Equipo1> Estados Unidos </Equipo1>
+<Equipo2> Inglaterra </Equipo2>
+<Equipo3> Eslovenia </Equipo3>
+<Equipo4> Argelia </Equipo4>
+</GrupoC>
+<GrupoD>
+<Equipo1> Alemania </Equipo1>
+<Equipo2> Ghana </Equipo2>
+<Equipo3> Australia </Equipo3>
+<Equipo4> Serbia </Equipo4>
+</GrupoD>
+<GrupoE>
+<Equipo1> Paises Bajos </Equipo1>
+<Equipo2> Japon </Equipo2>
+<Equipo3> Dinamarca </Equipo3>
+<Equipo4> Camerun </Equipo4>
+</GrupoE>
+<GrupoF>
+<Equipo1> Paraguay </Equipo1>
+<Equipo2> Eslovaquia </Equipo2>
+<Equipo3> Nueva Zelanda </Equipo3>
+<Equipo4> Italia </Equipo4>
+</GrupoF>
+<GrupoG>
+<Equipo1> Brasil </Equipo1>
+<Equipo2> Portugal </Equipo2>
+<Equipo3> Costa de Marfil </Equipo3>
+<Equipo4> Corea del Norte </Equipo4>
+</GrupoG>
+<GrupoH>
+<Equipo1> España </Equipo1>
+<Equipo2> Chile </Equipo2>
+<Equipo3> Suiza </Equipo3>
+<Equipo4> Honduras </Equipo4>
+</GrupoH>
+<OrganizaGrupo>
+<Juego1>
+<Rival1> Sudafrica </Rival1>
+<Rival2> Mexico </Rival2>
+</Juego1>
+<Juego2>
+<Rival1> Uruguay </Rival1>
+<Rival2> Francia </Rival2>
+</Juego2>
+<Juego3>
+<Rival1> Corea del Sur </Rival1>
+<Rival2> Grecia </Rival2>
+</Juego3>
+<Juego4>
+<Rival1> Argentina </Rival1>
+<Rival2> Nigeria </Rival2>
+</Juego4>
+<Juego5>
+<Rival1> Inglaterra </Rival1>
+<Rival2> Estados Unidos </Rival2>
+</Juego5>
+<Juego6>
+<Rival1> Argelia </Rival1>
+<Rival2> Eslovenia </Rival2>
+</Juego6>
+<Juego7>
+<Rival1> Serbia </Rival1>
+<Rival2> Ghana </Rival2>
+</Juego7>
+<Juego8>
+<Rival1> Alemania </Rival1>
+<Rival2> Australia </Rival2>
+</Juego8>
+<Juego9>
+<Rival1> Paises Bajos </Rival1>
+<Rival2> Dinamarca </Rival2>
+</Juego9>
+<Juego10>
+<Rival1> Japon </Rival1>
+<Rival2> Camerun </Rival2>
+</Juego10>
+<Juego11>
+<Rival1> Italia </Rival1>
+<Rival2> Paraguay </Rival2>
+</Juego11>
+<Juego12>
+<Rival1> Nueva Zelanda </Rival1>
+<Rival2> Eslovaquia </Rival2>
+</Juego12>
+<Juego13>
+<Rival1> Costa de Marfil </Rival1>
+<Rival2> Portugal </Rival2>
+</Juego13>
+<Juego14>
+<Rival1> Brasil </Rival1>
+<Rival2> Corea del Norte </Rival2>
+</Juego14>
+<Juego15>
+<Rival1> Honduras </Rival1>
+<Rival2> Chile </Rival2>
+</Juego15>
+<Juego16>
+<Rival1> España </Rival1>
+<Rival2> Suiza </Rival2>
+</Juego16>
+
+<Juego17>
+<Rival1> Sudafrica </Rival1>
+<Rival2> Uruguay </Rival2>
+</Juego17>
+<Juego18>
+<Rival1> Francia </Rival1>
+<Rival2> Mexico </Rival2>
+</Juego18>
+<Juego19>
+<Rival1> Argentina </Rival1>
+<Rival2> Corea del Sur </Rival2>
+</Juego19>
+<Juego20>
+<Rival1> Grecia </Rival1>
+<Rival2> Nigeria </Rival2>
+</Juego20>
+<Juego21>
+<Rival1> Eslovenia </Rival1>
+<Rival2> Estados Unidos </Rival2>
+</Juego21>
+<Juego22>
+<Rival1> Inglaterra </Rival1>
+<Rival2> Argelia </Rival2>
+</Juego22>
+<Juego23>
+<Rival1> Alemania </Rival1>
+<Rival2> Serbia </Rival2>
+</Juego23>
+<Juego24>
+<Rival1> Ghana </Rival1>
+<Rival2> Australia </Rival2>
+</Juego24>
+<Juego25>
+<Rival1> Paises Bajos </Rival1>
+<Rival2> Japon </Rival2>
+</Juego25>
+<Juego26>
+<Rival1> Camerun </Rival1>
+<Rival2> Dinamarca </Rival2>
+</Juego26>
+<Juego27>
+<Rival1> Eslovaquia </Rival1>
+<Rival2> Paraguay </Rival2>
+</Juego27>
+<Juego28>
+<Rival1> Italia </Rival1>
+<Rival2> Nueva Zelanda </Rival2>
+</Juego28>
+<Juego29>
+<Rival1> Brasil </Rival1>
+<Rival2> Costa de Marfil </Rival2>
+</Juego29>
+<Juego30>
+<Rival1> Portugal </Rival1>
+<Rival2> Corea del Norte </Rival2>
+</Juego30>
+<Juego31>
+<Rival1> Suiza </Rival1>
+<Rival2> Chile </Rival2>
+</Juego31>
+<Juego32>
+<Rival1> España </Rival1>
+<Rival2> Honduras </Rival2>
+</Juego32>
+
+<Juego33>
+<Rival1> Mexico </Rival1>
+<Rival2> Uruguay </Rival2>
+</Juego33>
+<Juego34>
+<Rival1> Francia </Rival1>
+<Rival2> Sudafrica </Rival2>
+</Juego34>
+<Juego35>
+<Rival1> Grecia </Rival1>
+<Rival2> Argentina </Rival2>
+</Juego35>
+<Juego36>
+<Rival1> Nigeria </Rival1>
+<Rival2> Corea del Sur </Rival2>
+</Juego36>
+<Juego37>
+<Rival1> Eslovenia </Rival1>
+<Rival2> Inglaterra </Rival2>
+</Juego37>
+<Juego38>
+<Rival1> Estados Unidos </Rival1>
+<Rival2> Argelia </Rival2>
+</Juego38>
+<Juego39>
+<Rival1> Ghana </Rival1>
+<Rival2> Alemania </Rival2>
+</Juego39>
+<Juego40>
+<Rival1> Australia </Rival1>
+<Rival2> Serbia </Rival2>
+</Juego40>
+<Juego41>
+<Rival1> Dinamarca </Rival1>
+<Rival2> Japon </Rival2>
+</Juego41>
+<Juego42>
+<Rival1> Camerun </Rival1>
+<Rival2> Paises Bajos </Rival2>
+</Juego42>
+<Juego43>
+<Rival1> Eslovaquia </Rival1>
+<Rival2> Italia </Rival2>
+</Juego43>
+<Juego44>
+<Rival1> Paraguay </Rival1>
+<Rival2> Nueva Zelanda </Rival2>
+</Juego44>
+<Juego45>
+<Rival1> Portugal </Rival1>
+<Rival2> Brasil </Rival2>
+</Juego45>
+<Juego46>
+<Rival1> Corea del Norte </Rival1>
+<Rival2> Costa de Marfil </Rival2>
+</Juego46>
+<Juego47>
+<Rival1> Chile </Rival1>
+<Rival2> España </Rival2>
+</Juego47>
+<Juego48>
+<Rival1> Suiza </Rival1>
+<Rival2> Honduras </Rival2>
+</Juego48>
+
+</OrganizaGrupo>
+<Organiza8vos>
+<Octavo1>
+<Rival1>
+<Grupo> A </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo>B</Grupo>
+<Posicion>2</Posicion>
+</Rival2>
+</Octavo1>
+<Octavo2>
+<Rival1>
+<Grupo> C </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> D </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo2>
+<Octavo3>
+<Rival1>
+<Grupo> B </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> A </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo3>
+<Octavo4>
+<Rival1>
+<Grupo> D </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> C </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo4>
+<Octavo5>
+<Rival1>
+<Grupo> E </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> F </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo5>
+<Octavo6>
+<Rival1>
+<Grupo> G </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> H </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo6>
+<Octavo7>
+<Rival1>
+<Grupo> F</Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> E </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo7>
+<Octavo8>
+<Rival1>
+<Grupo> H </Grupo>
+<Posicion> 1 </Posicion>
+</Rival1>
+<Rival2>
+<Grupo> G </Grupo>
+<Posicion> 2 </Posicion>
+</Rival2>
+</Octavo8>
+</Organiza8vos>
+<Organiza4tos>
+<Cuarto1>
+<Rival1> Octavo1 </Rival1>
+<Rival2> Octavo2 </Rival2>
+</Cuarto1>
+<Cuarto2>
+<Rival1> Octavo5 </Rival1>
+<Rival2> Octavo6 </Rival2>
+</Cuarto2>
+<Cuarto3>
+<Rival1> Octavo3 </Rival1>
+<Rival2> Octavo4 </Rival2>
+</Cuarto3>
+<Cuarto4>
+<Rival1> Octavo7 </Rival1>
+<Rival2> Octavo8 </Rival2>
+</Cuarto4>
+</Organiza4tos>
+
+<OrganizaSemiFinal>
+<Semi1>
+<Rival1> Cuarto1 </Rival1>
+<Rival2> Cuarto2 </Rival2>
+</Semi1>
+<Semi2>
+<Rival1> Cuarto3 </Rival1>
+<Rival2> Cuarto4 </Rival2>
+</Semi2>
+</OrganizaSemiFinal>
+
+<OrganizaFinal>
+<Final>
+<Rival1> Semi1 </Rival1>
+<Rival2> Semi2 </Rival2>
+</Final>
+</OrganizaFinal>
+</EstructuraFija>
+</Quiniela>

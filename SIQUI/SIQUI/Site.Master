@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SIQUI.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+  
+                    
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> Deportes Chapines</title>
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/style.css" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body >
+    <form id="form1" runat="server">
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <!-- Begin Header -->
+  <div id="header">
+    <h1>Deportes Chapines</h1>
+  </div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navtop">
+      <asp:ContentPlaceHolder runat="server" ID="MenuNavegacion" />
+      <asp:Menu ID="Menu1"  runat="server" Orientation="horizontal" BackColor="#F7F6F3" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+          <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+          <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+          <DynamicMenuStyle BackColor="#F7F6F3" />
+          <DynamicSelectedStyle BackColor="#5D7B9D" />
+          <Items>
+              <asp:MenuItem NavigateUrl="/Default.aspx" Text="Inicio" Value="Inicio"></asp:MenuItem>
+              <asp:MenuItem NavigateUrl="/Account/Register.aspx" Text="Registro de Usuarios" Value="Registro de Usuarios"></asp:MenuItem>
+              <asp:MenuItem Text="Ver Resultados de Torneo" Value="Ver Resultados de Torneo"></asp:MenuItem>
+              <asp:MenuItem Text="Reglas de Juego" Value="Reglas de Juego"></asp:MenuItem>
+              <asp:MenuItem Text="Acerca de " Value="Acerca de "></asp:MenuItem>
+          </Items>
+          <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+          <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+          <StaticSelectedStyle BackColor="#5D7B9D" />
+          <StaticItemTemplate>
+              <%# Eval("Text") %>
+          </StaticItemTemplate>
+      </asp:Menu>
+  </div>
+  <!-- End Navigation -->
+  <!-- Begin Left Column -->
+    <div id="leftcolumn">
+    <div id="navigation">
+      <ul>
+        <li><a href="/Default.aspx">> Inicio</a></li>
+        <li><a href="Account/Register.aspx">>Resitro de Usuarios</a></li>
+        <li><a href="MostrarResultados.aspx">>Ver Resultados Copa Mundial</a></li>
+        
+          <asp:Literal ID="MenuLiteral" runat="server"></asp:Literal>
+      </ul>
+    </div>
+    <div class="tableleft">
+      <h3>Sección de Usuarios</h3>
+        <table runat="server">
+            <tr>
+                <td>
+                    <asp:Label ID="LabelNombre" runat="server" Text="Usuario"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="userTB" runat="server" Width="73px"></asp:TextBox> 
+                    
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="LabelPass" runat="server" Text="Contraseña"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox TextMode="Password" ID="passTB" runat="server" Width="73px"></asp:TextBox> 
+                    
+                </td>
+            </tr>
+
+        
+
+         
+            
+        </table>
+        <p Align="Center">
+            
+            <asp:Label ID="avisoLB" runat="server" Text=""></asp:Label>
+
+        </p>
+        <p Align="Center">
+            <asp:Button ID="IngresoBt" runat="server" Text="Ingresar" OnClick="IngresoBt_Click" />
+        </p>
+        
+        <p>
+            <asp:Panel ID="PanelRegistro" runat="server">
+                ¿Aún no tienes una cuenta? <a href="Account/Register.aspx">Registrate acá</a>
+            </asp:Panel>
+            
+        </p>
+            
+      
+    </div>
+  </div>
+  <!-- End Left Column -->
+  <!-- Begin Right Column -->
+  <div id="maincolumn">
+    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+  </div>
+  <!-- End Right Column -->
+  <div class="clear"></div>
+  <div id="footer"> &copy; Copyright 2013 by Hugo García 200714466 USAC <br />
+    Icons by IconArchive (Free for non-commercial use) </div>
+</div>
+<!-- End Wrapper -->
+     
+
+    <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+
+
+
+
+            
+</form>       
+</body>
+
+
+         
+       
+
+    
+       
+
+</html>
