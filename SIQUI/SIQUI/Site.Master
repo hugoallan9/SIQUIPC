@@ -83,7 +83,14 @@
                     
                 </td>
             </tr>
-
+            <tr>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Torneo"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="listaTorneos" runat="server"></asp:DropDownList>
+                </td>
+            </tr>
         
 
          

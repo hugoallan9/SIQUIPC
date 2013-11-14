@@ -45,6 +45,14 @@ namespace SIQUI
                 Response.Cookies.Set(responseCookie);
             }
 
+            if (!IsPostBack)
+            {
+                BaseDatos.Consulta("");
+                listaTorneos.DataSource = BaseDatos.Dr;
+                listaTorneos.DataTextField = "";
+                listaTorneos.DataValueField = "";
+            }
+
             if (Session["currentUser"] != null)
             {
                 Usuario nuevo = (Usuario)Session["currentUser"];
