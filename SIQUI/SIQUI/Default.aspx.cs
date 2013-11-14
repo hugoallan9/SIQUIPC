@@ -18,14 +18,17 @@ namespace SIQUI
                 if (((Usuario)Session["currentUser"]).isAdmin())
                 {
                     menu.Text = "<li><a href=\"/Admin/Ingresar Estructura.aspx\">>Ingresar Torneo</a></li> \n " +
-                        "<li><a href=\"/Admin/EditarTorneo.aspx\">>Editar Torneo</a></li> \n";
+                        "<li><a href=\"/Admin/EditarTorneo.aspx\">>Editar Torneo</a></li> \n" +
+                        "<li><a href=\"/Admin/ElegirTorneo.aspx\">>Elegir Torneo</a></li> \n" +
+                        "<li><a href=\"/Admin/IngresarResultados.aspx\">>Ingresar Resultados del Campeonato</a></li> \n";
                 }
                 else
                 {
                     menu.Text = "<li><a href=\"/Miembros/CrearQuiniela.aspx\">> Ingresar Quiniela </a> \n"+
                         "<li><a href=\"/Miembros/MisQuinielas.aspx\">> Mis Quinielas </a> \n" +
                         "<li><a href=\"/Miembros/CrearGrupo.aspx\">> Crear un Grupo </a> \n" +
-                        "<li><a href=\"/Miembros/BuscarGrupo.aspx\">> Ver Grupos de Usuarios </a> \n";
+                        "<li><a href=\"/Miembros/BuscarGrupo.aspx\">> Ver Grupos de Usuarios </a> \n" +
+                        "<li><a href=\"/Miembros/VerResultados.aspx\">> Ver Resultados </a> \n";
                 }
 
             }

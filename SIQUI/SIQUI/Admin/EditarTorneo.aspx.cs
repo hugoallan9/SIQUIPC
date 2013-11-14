@@ -19,7 +19,7 @@ namespace SIQUI.Admin
 
             if (!IsPostBack)
             {
-                String consulta = "Select * from Torneo where codigoTorneo=" + Request.QueryString["codigo"];
+                String consulta = "Select * from Torneo where codigoTorneo=" + ((Torneo)Session["torneoActual"]).idTorneo;
                 BaseDatos.Consulta(consulta);
                 if (BaseDatos.Dr.Read())
                 {
@@ -39,7 +39,7 @@ namespace SIQUI.Admin
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            String consulta = "update Torneo set estado='"+TextBox1.Text+"' where codigoTorneo="+Request.QueryString["codigo"];
+            String consulta = "update Torneo set estado='" + TextBox1.Text + "' where codigoTorneo=" + ((Torneo)Session["torneoActual"]).idTorneo;
             BaseDatos.Consulta(consulta);
 
         }

@@ -14,26 +14,30 @@ namespace SIQUI.Miembros
         Usuario nuevo;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (((Torneo)Session["torneoActual"]).idTorneo == "-1")
+            {
+                Response.Redirect("/Default.aspx");
+            }
 
             if (Session["currentUser"]!= null)
             {
                 if (((Usuario)Session["currentUser"]).isAdmin())
                 {
-                    Response.Redirect("~/Default.aspx");
+                    //Response.Redirect("~/Default.aspx");
+                }
+                else
+                {
+                    torneoLb.Text = ((Torneo)Session["torneoActual"]).torneo;
                 }
                 nuevo = (Usuario)Session["currentUser"];
+               
                 if (!IsPostBack)
                 {
-                    nuevo.dondePuedeCrearQuinielas();
-                  
-                    torneoDDL.DataSource =  BaseDatos.Dr;
-                    torneoDDL.DataTextField = "nombreTorneo";
-                    torneoDDL.DataValueField = "codigoTorneo";
-                    torneoDDL.DataBind();
-
-
+                    ((Usuario)Session["currentUser"]).dondePuedeCrearQuinielas();
                     if (BaseDatos.Dr.HasRows)
                     {
+                        FileUpload1.Visible = false;
+                        Button1.Visible = false;
                         ingresoQBt.Visible = false;
                         mensaje.Text = "Has excedido el número de Quinielas o No hay torneos abiertos";
                     }
@@ -45,19 +49,21 @@ namespace SIQUI.Miembros
             {
                 Response.Redirect("~/Default.aspx");
             }
+
+            
         }
 
         protected void ingresoQBt_Click(object sender, EventArgs e)
         {
-            Quiniela quiniela = new Quiniela(nombreQuiniela.Text, Convert.ToString(nuevo.Codigo), torneoDDL.SelectedValue);
-            if (quiniela.existeQuiniela(nombreQuiniela.Text, Convert.ToString(nuevo.Codigo)))
+            Quiniela quiniela = new Quiniela(nombreQuiniela.Text, Convert.ToString(nuevo.Codigo), ((Torneo)Session["torneoActual"]).idTorneo);
+            if (quiniela.existeQuiniela(nombreQuiniela.Text, Convert.ToString(nuevo.nombreUsuario), ((Torneo)Session["torneoActual"]).idTorneo))
             {
                 mensaje.Text = "El nombre de la quiniela ya existe";
             }
             else
             {
                 quiniela.grabarQuiniela(nombreQuiniela.Text);
-                Response.Redirect("~/Miembros/ProcesoQuiniela.aspx?torneo=" + torneoDDL.SelectedValue + "&quiniela=" + nombreQuiniela.Text);
+                Response.Redirect("~/Miembros/ProcesoQuiniela.aspx?torneo=" + ((Torneo)Session["torneoActual"]).idTorneo + "&quiniela=" + nombreQuiniela.Text);
             }
 
         }
@@ -70,7 +76,7 @@ namespace SIQUI.Miembros
                 //{
                     String fileName = Path.GetFileName(FileUpload1.FileName);
                     FileUpload1.SaveAs(Server.MapPath("~/") + fileName);
-                    LectorQuiniela lector = new LectorQuiniela(Server.MapPath("~/") + fileName, torneoDDL.SelectedValue);
+                    LectorQuiniela lector = new LectorQuiniela(Server.MapPath("~/") + fileName, ((Torneo)Session["torneoActual"]).idTorneo);
                     lector.obtenerDatos();
                     lector.obtenerQuiniela();
                     xmlLb.Text = lector.validarQuiniela();

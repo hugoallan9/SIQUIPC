@@ -76,7 +76,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="LabelPass" runat="server" Text="Contraseña"></asp:Label>
+                    <asp:Label ID="LabelPass" runat="server" Text="Password"></asp:Label>
                 </td>
                 <td>
                     <asp:TextBox TextMode="Password" ID="passTB" runat="server" Width="73px"></asp:TextBox> 
@@ -85,7 +85,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label1" runat="server" Text="Torneo"></asp:Label>
+                    <asp:Label ID="torneoLb" runat="server" Text="Torneo"></asp:Label>
                 </td>
                 <td>
                     <asp:DropDownList ID="listaTorneos" runat="server"></asp:DropDownList>

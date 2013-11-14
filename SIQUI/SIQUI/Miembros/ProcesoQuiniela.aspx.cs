@@ -27,8 +27,8 @@ namespace SIQUI.Miembros
             if (!IsPostBack)
             {
                 usuario =  (Usuario) Session["currentUser"];
-                nuevoTorneo = new Torneo(Request.QueryString["torneo"]);
-                quiniela = new Quiniela(Request.QueryString["quiniela"], Convert.ToString(usuario.Codigo),Request.QueryString["torneo"]);
+                nuevoTorneo = new Torneo(((Torneo)Session["torneoActual"]).idTorneo);
+                quiniela = new Quiniela(Request.QueryString["quiniela"], Convert.ToString(usuario.Codigo), ((Torneo)Session["torneoActual"]).idTorneo);
                 Session["quiniela"] = quiniela;
                 nuevoTorneo.determinarGrupo("a");
                 DropDownListGA1.DataSource = BaseDatos.Dr;

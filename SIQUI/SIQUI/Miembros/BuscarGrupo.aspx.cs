@@ -33,7 +33,7 @@ namespace SIQUI.Miembros
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Admin/MostrarGrupo.aspx?grupo=" + muestrarioGrupos.SelectedValue);
+            Response.Redirect("/Miembros/MostrarGrupo.aspx?grupo=" + muestrarioGrupos.SelectedValue);
         }
     }
 }

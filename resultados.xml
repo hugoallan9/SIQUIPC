@@ -1,0 +1,101 @@
+﻿<QuinielaUsuario>
+<Usuario> 
+<Nombre>admin</Nombre>
+<Quiniela>
+<Nombre> master</Nombre>
+<Grupos>
+<Grupo> 
+<Nombre>A</Nombre>
+<Posicion1>Uruguay</Posicion1>
+<Posicion2>Mexico</Posicion2>
+</Grupo>
+<Grupo> 
+<Nombre>B</Nombre>
+<Posicion1> Argentina </Posicion1>
+<Posicion2> Nigeria </Posicion2>
+</Grupo><Grupo> 
+<Nombre> C  </Nombre>
+<Posicion1> Inglaterra </Posicion1>
+<Posicion2> Estados Unidos </Posicion2>
+</Grupo><Grupo> 
+<Nombre> D  </Nombre>
+<Posicion1> Alemania </Posicion1>
+<Posicion2> Australia </Posicion2>
+</Grupo><Grupo> 
+<Nombre> E  </Nombre>
+<Posicion1> Japon </Posicion1>
+<Posicion2> Camerun </Posicion2>
+</Grupo><Grupo> 
+<Nombre> F  </Nombre>
+<Posicion1> Italia </Posicion1>
+<Posicion2> Paraguay </Posicion2>
+</Grupo><Grupo> 
+<Nombre>  G </Nombre>
+<Posicion1> Brasil </Posicion1>
+<Posicion2> Costa de Marfil </Posicion2>
+</Grupo><Grupo> 
+<Nombre>H </Nombre>
+<Posicion1>España</Posicion1>
+<Posicion2> Honduras </Posicion2>
+</Grupo>
+</Grupos>
+<Octavos>
+<Octavo>
+<Nombre>1</Nombre>
+<Ganador> Uruguay </Ganador>
+</Octavo>
+<Octavo>
+<Nombre>2</Nombre>
+<Ganador> Inglaterra </Ganador>
+</Octavo><Octavo>
+<Nombre>3</Nombre>
+<Ganador> Argentina </Ganador>
+</Octavo><Octavo>
+<Nombre>4</Nombre>
+<Ganador> Alemania </Ganador>
+</Octavo><Octavo>
+<Nombre>5</Nombre>
+<Ganador> Paraguay </Ganador>
+</Octavo><Octavo>
+<Nombre>6</Nombre>
+<Ganador> Brasil </Ganador>
+</Octavo><Octavo>
+<Nombre>7</Nombre>
+<Ganador> España </Ganador>
+</Octavo><Octavo>
+<Nombre>8</Nombre>
+<Ganador> Australia </Ganador>
+</Octavo>
+</Octavos>
+<Cuartos>
+<Cuarto>
+<Nombre> 1 </Nombre>
+<Ganador> Alemania </Ganador>
+</Cuarto>
+<Cuarto>
+<Nombre> 2 </Nombre>
+<Ganador> Brasil </Ganador>
+</Cuarto>
+<Cuarto>
+<Nombre> 3 </Nombre>
+<Ganador> Uruguay </Ganador>
+</Cuarto>
+<Cuarto>
+<Nombre> 4 </Nombre>
+<Ganador> España </Ganador>
+</Cuarto>
+</Cuartos>
+<Semifinales>
+<Semifinal>
+<Nombre> 1 </Nombre>
+<Ganador> España </Ganador>
+</Semifinal>
+<Semifinal>
+<Nombre> 2 </Nombre>
+<Ganador> Alemania </Ganador>
+</Semifinal>
+</Semifinales>
+<Campeon> España </Campeon>
+</Quiniela>
+</Usuario>
+</QuinielaUsuario>

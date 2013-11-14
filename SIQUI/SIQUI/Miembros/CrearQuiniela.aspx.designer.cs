@@ -22,13 +22,13 @@ namespace SIQUI.Miembros {
         protected global::System.Web.UI.WebControls.Literal Literal1;
         
         /// <summary>
-        /// Control torneoDDL.
+        /// Control torneoLb.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList torneoDDL;
+        protected global::System.Web.UI.WebControls.Label torneoLb;
         
         /// <summary>
         /// Control nombreQuiniela.

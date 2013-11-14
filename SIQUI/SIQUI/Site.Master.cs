@@ -45,13 +45,7 @@ namespace SIQUI
                 Response.Cookies.Set(responseCookie);
             }
 
-            if (!IsPostBack)
-            {
-                BaseDatos.Consulta("");
-                listaTorneos.DataSource = BaseDatos.Dr;
-                listaTorneos.DataTextField = "";
-                listaTorneos.DataValueField = "";
-            }
+  
 
             if (Session["currentUser"] != null)
             {
@@ -64,6 +58,8 @@ namespace SIQUI
                     passTB.Visible = false;
                     IngresoBt.Text = "Salir";
                     PanelRegistro.Visible = false;
+                    torneoLb.Text = "Torneo: " + ((Torneo)Session["torneoActual"]).torneo;
+                    listaTorneos.Visible = false;
                 }
                 else
                 {
@@ -81,6 +77,12 @@ namespace SIQUI
                 // Set Anti-XSRF token
                 ViewState[AntiXsrfTokenKey] = Page.ViewStateUserKey;
                 ViewState[AntiXsrfUserNameKey] = Context.User.Identity.Name ?? String.Empty;
+                BaseDatos bd = new BaseDatos();
+                BaseDatos.Consulta("select codigoTorneo, nombreTorneo from Torneo where estado = 'finalizado'");
+                listaTorneos.DataSource = BaseDatos.Dr;
+                listaTorneos.DataTextField = "nombreTorneo";
+                listaTorneos.DataValueField = "codigoTorneo";
+                listaTorneos.DataBind();
             }
             else
             {
@@ -101,6 +103,16 @@ namespace SIQUI
         protected void IngresoBt_Click(object sender, EventArgs e)
         {
             Usuario nuevo = new Usuario(userTB.Text, "", "", "", "");
+            Torneo torneoActual;
+            if (listaTorneos.SelectedValue != "")
+            {
+                torneoActual = new Torneo(listaTorneos.SelectedItem.Text, listaTorneos.SelectedValue);
+            }
+            else
+            {
+                torneoActual = new Torneo("", "-1");
+            }
+        
             if (Session["estadoLogin"] == null)
             {
                 Session["estadoLogin"] = false;
@@ -110,6 +122,7 @@ namespace SIQUI
             if (nuevo.obtenerUsuario(userTB.Text, passTB.Text) && !(bool)Session["estadoLogin"])
             {
                 Session["currentUser"] = nuevo;
+                Session["torneoActual"] = torneoActual;
                 Session["estadoLogin"] = true;
                 LabelNombre.Text = "Bienvenido " + nuevo.Nombre;
                 userTB.Visible = false;
@@ -117,6 +130,8 @@ namespace SIQUI
                 passTB.Visible = false;
                 IngresoBt.Text = "Salir";
                 PanelRegistro.Visible = false;
+                listaTorneos.Visible = false;
+                torneoLb.Text =  "Torneo: "  + ((Torneo)Session["torneoActual"]).torneo; 
                 Response.Redirect("~/Default.aspx");
             }
             else if ((bool)Session["estadoLogin"])

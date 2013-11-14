@@ -10,8 +10,8 @@ namespace SIQUI.Clases
     public class BaseDatos
     {
         private static SqlDataReader mydr;
-        private static String conexion = "Data Source=T800\\SQLEXPRESS;Initial Catalog=Proyecto2;Integrated Security=True";
-        private static SqlConnection myConection;
+        private static String conexion = "Data Source=ASUSTOUCH\\SQLEXPRESS;Initial Catalog=Proyecto2;Integrated Security=True";
+        private static SqlConnection myConection = new SqlConnection(conexion);
         private static SqlCommand myCommand;
 
         public BaseDatos()

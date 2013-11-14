@@ -127,14 +127,10 @@ namespace SIQUI.Clases
 
             if (tieneQuinielas())
             {
-                String consulta = "Select nombreTorneo, codigoTorneo from Torneo where estado='finalizado' and codigoTorneo in(Select torneo from(Select Count(codigoQuiniela) as [Total por torneo], torneo from Quiniela where propietario=" + codigoUsuario + "group by torneo)b where b.[Total por torneo]<5 )";
+                String consulta = "Select nombreTorneo, codigoTorneo from Torneo where estado='finalizado' and codigoTorneo in(Select torneo from(Select Count(codigoQuiniela) as [Total por torneo], torneo from Quiniela where propietario=" + codigoUsuario + "group by torneo)b where b.[Total por torneo]>=5 )";
                 Consulta(consulta);
             }
-            else
-            {
-                String consulta1 = "Select nombreTorneo, codigoTorneo from Torneo";
-                Consulta(consulta1);
-            }
+            
         }
 
         private bool tieneQuinielas()

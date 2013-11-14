@@ -6,10 +6,10 @@
     <table>
         <tr>
             <td>
-                <span>Eliga el campeonato</span>
+                <span>El campeonato es: </span>
             </td>
             <td>
-                <asp:DropDownList ID="torneoDDL" runat="server"></asp:DropDownList>
+                <asp:Label ID="torneoLb" runat="server" Text=""></asp:Label>    
             </td>
         </tr>
         <tr>

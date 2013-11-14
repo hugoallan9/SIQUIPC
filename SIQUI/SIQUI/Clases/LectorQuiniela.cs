@@ -61,7 +61,7 @@ namespace SIQUI.Clases
         public String validarQuiniela()
         {
             String respuesta;
-            if (quiniela.existeQuiniela(quiniela.nombreQuiniela, user.nombreUsuario))
+            if (quiniela.existeQuiniela(quiniela.nombreQuiniela, user.nombreUsuario,torneo))
             {
                 respuesta = "La quiniela ya existe, elige otro nombre";
             }
@@ -88,7 +88,7 @@ namespace SIQUI.Clases
                     quiniela.S1.equipoGanador = p2;
                     break;
                 case "2":
-                    quiniela.S1.equipoGanador = p2;
+                    quiniela.S2.equipoGanador = p2;
                     break;
             }
         }
